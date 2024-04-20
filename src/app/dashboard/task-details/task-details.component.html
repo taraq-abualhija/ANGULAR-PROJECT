@@ -1,0 +1,36 @@
+<div class="overlay">
+	<div class="popup">
+        <h2>{{ selectedTask?.title }}</h2>
+        <hr>
+		<a class="close" href="#" (click)="onCloseDetailsPage()">&times;</a>
+		<div class="content">
+			<section class="container">
+                
+                <h3>Description</h3>
+                <p>
+                    {{ selectedTask?.description }}
+                </p>
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="width: 50%;">
+                        <strong>Assigned To: </strong>
+                        {{ selectedTask?.assignedTo }}
+                    </div>
+                    <div style="width: 50%;">
+                        <strong>Created At: </strong>
+                        {{ selectedTask?.date }} 
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="width: 50%;">
+                        <strong>Priority: </strong>
+                        {{ selectedTask?.priority }}
+                    </div>
+                    <div style="width: 50%;">
+                        <strong>Current Status: </strong>
+                        {{ selectedTask?.status }} 
+                    </div>
+                </div>
+            </section>
+		</div>
+	</div>
+</div>
